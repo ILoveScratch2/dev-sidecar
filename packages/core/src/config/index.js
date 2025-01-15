@@ -273,6 +273,12 @@ const defaultConfig = {
           desc: '广告拦截',
         },
       },
+      '*.blob.core.windows.net': {
+        '.*': {
+          sni: 'baidu.com',
+          rejectUnauthorized: false
+        }
+      },
     },
     // 预设置IP列表
     preSetIpList: {
